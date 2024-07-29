@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="TitsPlay.Views.MainWindow"
+        Width="750" Height="450" Title="Line Player" Icon="avares://TitsPlay/Assets/icon.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Name="LoadDocxButton" Content="Load DOCX" Margin="5"/>
+            <Button Name="SelectFolderButton" Content="Select Folder" Margin="5"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5,0,0,0">
+            <TextBlock Text="Current File:" VerticalAlignment="Center"/>
+            <TextBlock Name="CurrentFileText" Text="No file..." VerticalAlignment="Center" FontWeight="Bold" Margin="5,0,0,0"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5,30,0,0">
+            <TextBlock Text="Current Speaker:" VerticalAlignment="Center"/>
+            <TextBlock Name="CurrentSpeakerText" Text="Lorem Ipsum" VerticalAlignment="Center" FontWeight="Bold" Margin="5,0,0,0"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" TextAlignment="Center" LineHeight="40" Name="LineText" Text="Load Ogg folder and Docx to" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Margin="50,0,50,50" FontSize="20"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Name="PreviousButton" Content="Previous" Margin="5"/>
+            <Button Name="PlayButton" Content="Play" Margin="5"/>
+            <Button Name="NextButton" Content="Next" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
