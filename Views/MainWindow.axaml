@@ -16,6 +16,14 @@
             <Button Name="SelectFolderButton" Content="Select Folder" Margin="5"/>
         </StackPanel>
 
+		<StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+		    <TextBlock Margin="0,0,10,0" VerticalAlignment="Center" >Selected Voice:</TextBlock>
+			<ComboBox Margin="0,0,10,0" x:Name="VoiceComboBox" SelectedIndex="0" IsEnabled="False">
+			</ComboBox>
+
+
+		</StackPanel>
+
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5,0,0,0">
             <TextBlock Text="Current File:" VerticalAlignment="Center"/>
